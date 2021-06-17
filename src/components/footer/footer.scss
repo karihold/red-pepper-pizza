@@ -1,0 +1,45 @@
+@import "variables";
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 2px;
+  background-color: $background-color;
+}
+
+.footer-item-link {
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+  color: $text-color-dark;
+}
+
+.footer-link-group {
+  vertical-align: text-top;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 15px;
+}
+
+.footer-links > li {
+  margin-bottom: 13px;
+  font-size: 13px;
+}
+
+.footer-a {
+  color: $text-color-dark;
+  text-decoration: none;
+}
+
+.footer-link-group > h2,
+.footer-link-group > ul {
+  text-align: left;
+}
+
+.footer-link-group > h2 {
+  margin-bottom: 20px;
+  color: $text-color-dark;
+  text-decoration: underline;
+  text-decoration-color: #f25f08;
+}

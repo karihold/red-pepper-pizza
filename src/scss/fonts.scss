@@ -1,0 +1,18 @@
+/*Font Faces*/
+
+@font-face {
+  font-family: "HeroLight";
+  src: url("../../assets/fonts//Hero-Light.woff2") format("woff2"),
+    url("../../assets/fonts//Hero-Light.woff") format("woff");
+}
+
+/* merriweather-regular */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../../assets/fonts/merriweather-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../assets/fonts/merriweather-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

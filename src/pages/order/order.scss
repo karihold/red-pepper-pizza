@@ -1,0 +1,238 @@
+@import "mixins";
+@import "variables";
+@import "../../scss/fonts.scss";
+
+.order-main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.order-h2 {
+  margin-bottom: 70px;
+  font-size: 50px;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 120px;
+  padding: 0 26px;
+}
+
+fieldset {
+  margin-bottom: 40px;
+  padding: 25px 26px;
+  background-color: $text-color;
+
+  border: 1px solid $text-color-dark;
+
+  box-shadow: 5px 10px $text-color-dark;
+}
+
+legend {
+  font-size: 29px;
+  font-weight: 700;
+  background-color: $text-color-dark;
+  color: $text-color;
+  padding: 10px 20px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+input[type="checkbox"] {
+  border-radius: 4px;
+}
+
+input[type="submit"],
+button {
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+button[type="submit"] {
+  background-color: $text-color-orange;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  transform: scale(0.95);
+}
+
+button {
+  font-family: HeroLight;
+  font-weight: 700;
+  background-color: #fff;
+  color: $text-color-dark;
+  border: none;
+}
+
+button:hover {
+  transform: scale(0.95);
+}
+
+/*Classes*/
+
+.nav-item {
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 22px;
+
+  @media only screen and (max-width: 1650px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin-left: 40px;
+  }
+}
+
+.text-input-group {
+  margin: 0 auto 22px;
+  text-align: left;
+}
+
+.text-input-group > label {
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: $text-color-dark;
+}
+
+.text-input-group > input {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-bottom: 1px solid $text-color-dark;
+}
+
+.input-group-wrapper {
+  text-align: center;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.input-group > label {
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: text-bottom;
+  color: $text-color-dark;
+}
+
+.pizza-and-crust {
+  width: 100%;
+}
+
+.pizza-and-crust > fieldset {
+  display: inline-block;
+  width: 50%;
+  height: 145px;
+  vertical-align: middle;
+  margin-right: -5px;
+}
+
+.form-buttons {
+  width: 100%;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: center;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 800px) {
+  fieldset {
+    padding-bottom: 30px;
+  }
+  .pizza-and-crust > fieldset {
+    height: 165px;
+  }
+  .input-group-wrapper {
+    text-align: left;
+  }
+  .input-group {
+    width: 120px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+  #extra-toppings {
+    text-align: left;
+  }
+  #extra-toppings > legend {
+    text-align: center;
+  }
+  #extra-toppings > .input-group {
+    width: 110px;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+  .footer-link-group {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  footer {
+    text-align: left;
+  }
+  .nav-item {
+    margin-left: 0;
+  }
+  .nav-item:last-of-type {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  nav > ul {
+    text-align: left;
+    padding: 0 26px;
+  }
+  .nav-item {
+    margin-bottom: 14px;
+    margin-right: 0;
+  }
+  .nav-item:not(:last-of-type)::after {
+    content: "|";
+    font-size: 20px;
+    color: #f25f08;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .pizza-and-crust > fieldset {
+    width: 100%;
+  }
+  .input-group-wrapper {
+    text-align: center;
+  }
+}
